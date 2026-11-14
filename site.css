@@ -138,7 +138,8 @@ main { overflow-x: clip; }
   -webkit-mask-image: radial-gradient(closest-side, #000 55%, transparent);
   mask-image: radial-gradient(closest-side, #000 55%, transparent); }
 .case-hero { position: relative; }
-.case-hero::before { top: -180px; opacity: .8; }
+.case-hero::before { display: none; }
+body.case { background-image: radial-gradient(ellipse 55vw 450px at 75% 350px, rgba(123, 77, 255, .14), transparent 75%), radial-gradient(ellipse 45vw 450px at 100% 420px, rgba(255, 135, 155, .13), transparent 75%); background-size: 100% 1000px; background-repeat: no-repeat; }
 .hero h1 { max-width: 17ch; margin-top: clamp(14px, 1.6vw, 24px); font-size: clamp(2.5rem, 7vw, 6.75rem); line-height: .98; letter-spacing: -.05em; }
 .hero h1 em { font-style: normal; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 48px; align-items: end; margin-top: clamp(22px, 3vw, 44px); }
@@ -302,12 +303,13 @@ main { overflow-x: clip; }
 .foot-bottom a:hover { color: var(--on-dark); }
 
 /* ───── Страницы кейсов ───── */
-.case main { padding-top: clamp(112px, 12vw, 176px); }
+.case main { padding-top: clamp(112px, 12vw, 176px); overflow: visible; }
 .case-hero { padding-bottom: clamp(32px, 4.4vw, 64px); }
 .back { display: inline-flex; align-items: center; min-height: 40px; margin-bottom: clamp(24px, 3.4vw, 48px); font-size: .9rem; font-weight: 500; color: var(--muted); transition: color .25s; }
 .back:hover { color: var(--accent); }
 .case-hero h1 { max-width: 16ch; margin: clamp(12px, 1.4vw, 20px) 0 clamp(16px, 2vw, 28px); font-size: clamp(2.5rem, 7vw, 6.75rem); line-height: .98; letter-spacing: -.05em; overflow-wrap: anywhere; }
-.case-hero .intro { max-width: 40ch; font-size: clamp(1.1rem, 1.6vw, 1.45rem); line-height: 1.32; letter-spacing: -.015em; }
+.case-hero h1.rise[data-reveal] { margin-bottom: clamp(22px, 2.6vw, 38px); }
+.case-hero .intro { max-width: 52ch; text-wrap: pretty; font-size: clamp(1.1rem, 1.6vw, 1.45rem); line-height: 1.32; letter-spacing: -.015em; }
 .cover { position: relative; display: flex; flex-direction: column; padding: clamp(18px, 5vw, 72px) clamp(16px, 9vw, 150px) 0; border-radius: var(--r); background: var(--surface); overflow: hidden; }
 .cover img { width: 100%; border-radius: clamp(6px, .8vw, 12px) clamp(6px, .8vw, 12px) 0 0; box-shadow: 0 24px 60px rgba(22, 22, 26, .16); }
 .cover-access img { max-width: 920px; align-self: center; }
@@ -357,8 +359,29 @@ main { overflow-x: clip; }
 .next small { display: block; margin-bottom: .9em; }
 .next strong { display: block; font-size: clamp(2rem, 5vw, 4.5rem); font-weight: 560; line-height: 1; letter-spacing: -.05em; }
 .next b { flex: none; font-size: clamp(1.6rem, 3vw, 2.8rem); font-weight: 400; line-height: 1; transition: transform .5s var(--ease); }
-.next:hover { background: var(--grad); color: #fff; }
+.next:hover, .next:focus-visible { background: var(--grad); color: #fff; }
+.next:hover small, .next:focus-visible small { color: #fff; }
 .next:hover b { transform: translate(4px, -4px); }
+
+/* Иллюстрации и процесс работы в кейсе */
+.case-feature { padding: clamp(20px, 4vw, 56px); border-radius: var(--r); overflow: hidden; }
+.case-feature img { width: 100%; border-radius: clamp(6px, .8vw, 12px); box-shadow: 0 24px 60px rgba(20, 8, 60, .25); }
+.case-block .case-steps { list-style: none; counter-reset: case-step; }
+.case-block .case-steps > li { position: relative; padding-left: 3rem; }
+.case-steps > li::before { counter-increment: case-step; content: "0" counter(case-step); position: absolute; left: 0; top: 1rem; font-size: .85rem; font-weight: 600; color: var(--accent); }
+.case-steps > li:first-child::before { top: .2rem; }
+.case-steps h3 { margin-bottom: .6em; font-size: clamp(1.1rem, 1.4vw, 1.3rem); line-height: 1.2; letter-spacing: -.025em; }
+.experiment { margin-top: 24px; padding: clamp(18px, 2.6vw, 36px); border-radius: var(--r); background: var(--tint); }
+.case-block .experiment-label { margin-bottom: 14px; font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.experiment h3 { max-width: 24ch; font-size: clamp(1.25rem, 2vw, 1.8rem); line-height: 1.15; }
+.experiment-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 26px 0; }
+.experiment-groups > div { display: grid; align-content: start; gap: 10px; padding: 16px; border-radius: 12px; background: var(--bg); }
+.experiment-groups b { font-size: .9rem; line-height: 1.3; }
+.experiment-groups span { font-size: .9rem; line-height: 1.4; color: var(--muted); }
+.case-block .experiment-result { padding-top: 18px; border-top: 1px solid var(--line); font-size: .95rem; line-height: 1.4; }
+@media (max-width: 1000px) {
+  .experiment-groups { grid-template-columns: 1fr; }
+}
 
 /* Резюме */
 .resume .hero-actions { margin: 0 0 clamp(28px, 4vw, 56px); }

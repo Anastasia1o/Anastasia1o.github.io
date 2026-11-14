@@ -494,5 +494,32 @@
         "bytes": 182036
       }
     ]
+  },
+  {
+    "id": "sl-communications",
+    "source": "frames/Коммуникации — Редактор коммуникаций_Ошибка.svg",
+    "aliases": [
+      "sl-n-comm"
+    ],
+    "sha256": "e691ab53b586dd630485f74e8597d395ad9f157ab19624ce475d47261c556ff6",
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/sl-communications-800.webp",
+        "bytes": 31970
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/sl-communications-1600.webp",
+        "bytes": 64328
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/sl-communications-2400.webp",
+        "bytes": 110742
+      }
+    ]
   }
 ]
