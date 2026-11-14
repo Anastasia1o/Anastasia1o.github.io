@@ -21,7 +21,7 @@ if (!calm && "IntersectionObserver" in window) {
   showAll();
 }
 
-// Фильтр работ по направлениям
+// Фильтр кейсов по направлениям
 const filter = document.querySelector("[data-filter]");
 if (filter) {
   const buttons = [...filter.querySelectorAll("button")];
@@ -29,9 +29,9 @@ if (filter) {
   const count = filter.querySelector("[data-count]");
   const plural = (n) => {
     const a = n % 10, b = n % 100;
-    if (a === 1 && b !== 11) return "работа";
-    if (a >= 2 && a <= 4 && (b < 12 || b > 14)) return "работы";
-    return "работ";
+    if (a === 1 && b !== 11) return "кейс";
+    if (a >= 2 && a <= 4 && (b < 12 || b > 14)) return "кейса";
+    return "кейсов";
   };
   const apply = (tag) => {
     let shown = 0;
@@ -54,7 +54,7 @@ if (filter) {
 }
 
 // Обложка-веер лежит над ссылкой карточки, чтобы экраны реагировали на наведение;
-// клик по обложке по-прежнему открывает работу
+// клик по обложке по-прежнему открывает кейс
 document.querySelectorAll(".cover-stack, .card-cover.cover-scene").forEach((cover) => {
   const link = cover.closest(".card")?.querySelector("h3 a");
   if (link) cover.addEventListener("click", () => link.click());
