@@ -231,6 +231,7 @@ main { overflow-x: clip; }
 .card-cover .cover-badge-wide img { height: 1.5em; border-radius: 0; }
 .card-body { display: grid; gap: 8px; padding-top: clamp(14px, 1.6vw, 22px); }
 .card-body .card-text { margin-top: 4px; }
+.card:not(.card-lg) .card-text { min-block-size: 4.2em; }
 .card h3 { font-size: clamp(1.5rem, 2.3vw, 2.1rem); }
 .card h3 a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
 .card h3 a:focus-visible { outline: none; }
@@ -244,7 +245,7 @@ main { overflow-x: clip; }
 .card-text, .xp-text, .rcr dd { text-wrap: pretty; }
 /* Карточка без страницы кейса: обложка не ведёт по клику */
 .card:not(:has(h3 a)) .card-cover { cursor: default; }
-.card-text { max-width: 46ch; font-size: clamp(1rem, 1.2vw, 1.12rem); line-height: 1.4; }
+.card-text { max-width: 100%; font-size: clamp(1rem, 1.2vw, 1.12rem); line-height: 1.4; }
 /* Обложка-веер на странице кейса: та же, что у большой карточки, но без ссылки */
 .case-cover { aspect-ratio: 16 / 8.2; cursor: default; }
 @media (min-width: 761px) {
@@ -271,7 +272,7 @@ main { overflow-x: clip; }
 /* Обо мне и опыт */
 .about-top { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: clamp(20px, 3vw, 44px); align-items: center; }
 .about-top img { width: clamp(140px, 17vw, 240px); aspect-ratio: 1; object-fit: cover; border-radius: var(--r); }
-.about-lead { max-width: 34ch; font-size: clamp(1.45rem, 2.5vw, 2.3rem); font-weight: 560; line-height: 1.12; letter-spacing: -.035em; text-wrap: pretty; }
+.about-lead { max-width: 48ch; font-size: clamp(1.15rem, 1.6vw, 1.5rem); font-weight: 560; line-height: 1.35; letter-spacing: -.035em; text-wrap: pretty; }
 /* Каждое предложение — с новой строки */
 .about-lead em { display: block; margin-top: .35em; font-style: normal; color: var(--muted); }
 .cv-cta { padding-top: clamp(24px, 3vw, 44px); border-top: 1px solid var(--line); }
@@ -385,6 +386,7 @@ main { overflow-x: clip; }
   .facts { grid-template-columns: 1fr 1fr; gap: 20px var(--gap); border-top: 0; }
   .facts div { border-top: 1px solid var(--line); padding-top: 12px; }
   .works { grid-template-columns: 1fr; }
+  .card:not(.card-lg) .card-text { min-block-size: 5.6em; }
   .card-cover, .card-lg .card-cover, .case-cover { aspect-ratio: 4 / 3; }
   .cover-badge { font-size: .72rem; }
   .cover-phones:has(.cover-badge) > img { margin-top: 15%; }
