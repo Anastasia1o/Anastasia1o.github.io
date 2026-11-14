@@ -249,8 +249,8 @@ body { background-image: radial-gradient(ellipse 55vw 450px at 75% 350px, rgba(1
 .card-text { max-width: 100%; font-size: clamp(1rem, 1.2vw, 1.12rem); line-height: 1.4; }
 /* Обложка-веер на странице кейса: та же, что у большой карточки, но без ссылки */
 .case-cover { aspect-ratio: 16 / 8.2; cursor: default; }
-@media (min-width: 761px) {
-  .card-lg .cover-fan img, .case-cover.cover-fan img { width: 46%; }
+/* Сохраняем композицию экранов при любом размере обложки. */
+.card-lg .cover-fan img, .case-cover.cover-fan img { width: 46%; }
   .card-lg .cover-fan img:nth-child(1), .case-cover.cover-fan img:nth-child(1) { left: 6%; top: 8%; }
   .card-lg .cover-fan img:nth-child(2), .case-cover.cover-fan img:nth-child(2) { left: 27%; top: 22%; }
   .card-lg .cover-fan img:nth-child(3), .case-cover.cover-fan img:nth-child(3) { right: 6%; top: 37%; }
@@ -258,7 +258,6 @@ body { background-image: radial-gradient(ellipse 55vw 450px at 75% 350px, rgba(1
   .case-cover.cover-phones img:nth-child(1) { left: 16%; }
   .case-cover.cover-phones img:nth-child(2) { left: 39%; }
   .case-cover.cover-phones img:nth-child(3) { right: 16%; }
-}
 .card-lg .card-body { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 20px var(--gap); align-items: start; }
 .card-lg h3 { font-size: clamp(2rem, 4vw, 3.5rem); letter-spacing: -.05em; }
 .card-lg .card-head { display: grid; gap: 10px; }
@@ -410,7 +409,8 @@ body { background-image: radial-gradient(ellipse 55vw 450px at 75% 350px, rgba(1
   .facts div { border-top: 1px solid var(--line); padding-top: 12px; }
   .works { grid-template-columns: 1fr; }
   .card:not(.card-lg) .card-text { min-block-size: 5.6em; }
-  .card-cover, .card-lg .card-cover, .case-cover { aspect-ratio: 4 / 3; }
+  .card-cover { aspect-ratio: 4 / 3; }
+  .card-lg .card-cover, .case-cover { aspect-ratio: 16 / 8.2; }
   .cover-badge { font-size: .72rem; }
   .cover-phones:has(.cover-badge) > img { margin-top: 15%; }
   .asset-row { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
