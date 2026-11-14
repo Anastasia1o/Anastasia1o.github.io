@@ -464,4 +464,4 @@ body { background-image: radial-gradient(ellipse 55vw 450px at 75% 350px, rgba(1
 html { scrollbar-gutter: auto; }
 .case-block [id] { scroll-margin-top: 100px; }
 
-.case-cover.cover-phones > img[src*="avc-task-detail"] { top: 16%; }
+.case-cover.cover-phones > img[src*="avc-task-detail"] { top: calc(7% + 5px); }
