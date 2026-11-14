@@ -465,3 +465,23 @@ html { scrollbar-gutter: auto; }
 .case-block [id] { scroll-margin-top: 100px; }
 
 .case-cover.cover-phones > img[src*="avc-task-detail"] { top: calc(7% + 5px); }
+/* На телефоне опыт читается отдельными карточками; текст сохраняется. */
+@media (max-width: 760px) {
+  .xp-list { display: grid; gap: 18px; margin-top: 32px; }
+  .xp { --xp-accent: #7040cb; --xp-tint: #f1ebfb; position: relative; gap: 18px; padding: 22px 20px; border: 1px solid #e7e0ef; border-left: 4px solid var(--xp-accent); border-radius: 18px; background: linear-gradient(150deg, var(--xp-tint), #fff 46%); }
+  .xp:nth-child(2) { --xp-accent: #2866b8; --xp-tint: #eaf2fd; }
+  .xp:nth-child(3) { --xp-accent: #247565; --xp-tint: #e9f5f0; }
+  .xp:nth-child(4) { --xp-accent: #87571f; --xp-tint: #faf1e3; }
+  .xp h3 { max-width: 25ch; font-size: 1.18rem; line-height: 1.2; }
+  .xp-role p { margin-top: 8px; font-size: .92rem; line-height: 1.4; color: var(--xp-accent); }
+  .xp time { display: inline-block; margin-top: 14px; padding: 6px 9px; border-radius: 7px; background: #fff; color: var(--xp-accent); font-size: .64rem; line-height: 1.45; letter-spacing: .035em; }
+  .xp-text { font-size: .97rem; line-height: 1.6; }
+  .xp-sentence { display: block; }
+  .xp-sentence + .xp-sentence { margin-top: .75em; }
+  .xp-text strong { color: var(--xp-accent); font-weight: 600; }
+  .xp-tags { grid-column: auto; display: flex; flex-wrap: wrap; gap: 7px; padding-top: 4px; }
+  .xp-tags li { padding: 5px 9px; border-radius: 6px; background: var(--xp-tint); color: var(--xp-accent); font-size: .62rem; line-height: 1.4; letter-spacing: .04em; }
+  .about-lead { font-size: 1.1rem; line-height: 1.45; color: var(--accent); }
+  .about-lead em { margin-top: .8em; color: var(--ink); font-size: .95rem; font-weight: 400; line-height: 1.5; letter-spacing: -.01em; }
+}
+@media (min-width: 761px) { .xp-text strong { font-weight: inherit; } }
