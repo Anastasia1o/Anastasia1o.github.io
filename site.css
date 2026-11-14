@@ -465,10 +465,8 @@ html { scrollbar-gutter: auto; }
 .case-block [id] { scroll-margin-top: 100px; }
 
 .case-cover.cover-phones > img[src*="avc-task-detail"] { top: calc(7% + 5px); }
-/* Акценты опыта в существующей палитре, без изменения вёрстки. */
-.xp-text strong { font-weight: inherit; }
-@media (max-width: 760px) {
-  .xp-text strong { color: var(--accent); font-weight: 560; }
-  .xp-tags { gap: 7px; }
-  .xp-tags li { padding: 5px 9px; border-radius: 6px; background: var(--tint); color: var(--accent); }
-}
+/* Акценты опыта в существующей палитре на всех разрешениях. */
+.xp-text strong { color: var(--accent); font-weight: 560; }
+.xp-tags { display: flex; flex-wrap: wrap; align-content: start; align-items: flex-start; gap: 7px; }
+.xp-tags li { max-width: 100%; padding: 5px 9px; border-radius: 6px; background: var(--tint); color: var(--accent); overflow-wrap: anywhere; }
+.xp > * { min-width: 0; }
