@@ -1,0 +1,498 @@
+[
+  {
+    "id": "sl-chains",
+    "source": "frames/Цепочки_Таблица всех цепочек.svg",
+    "aliases": [
+      "sl-n-chains"
+    ],
+    "sha256": "c059fddbeaa8a349cfea5b3276d6d567912b5348517f546308201bbc0713dcee",
+    "width": 1280,
+    "height": 794,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/sl-chains-800.webp",
+        "bytes": 43194
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/sl-chains-1600.webp",
+        "bytes": 60094
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/sl-chains-2400.webp",
+        "bytes": 128912
+      }
+    ]
+  },
+  {
+    "id": "sl-chain-edit",
+    "source": "frames/Режим редактирования запущенной цепочки (не MVP).svg",
+    "aliases": [
+      "sl-n-chain-edit",
+      "sl-chain-1",
+      "sl-chain-2",
+      "loyalty-error"
+    ],
+    "sha256": "1125f984157d65d2e0be70ea188607f87a2ab601ecf09682570d0dcab4720dfe",
+    "width": 1490,
+    "height": 853,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/sl-chain-edit-800.webp",
+        "bytes": 22250
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/sl-chain-edit-1600.webp",
+        "bytes": 55942
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/sl-chain-edit-2400.webp",
+        "bytes": 88214
+      }
+    ]
+  },
+  {
+    "id": "sl-segment-created",
+    "source": "frames/Создание нового сегмента_Шаг 2_Созданы сегменты_2.svg",
+    "aliases": [
+      "sl-n-segment-2"
+    ],
+    "sha256": "1e5f401ef343400f272fd34e958d7b10dfee27d24a6a98e73bb84ac352b80a37",
+    "width": 1280,
+    "height": 813,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/sl-segment-created-800.webp",
+        "bytes": 40802
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/sl-segment-created-1600.webp",
+        "bytes": 89026
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/sl-segment-created-2400.webp",
+        "bytes": 132702
+      }
+    ]
+  },
+  {
+    "id": "sl-segment-number",
+    "source": "frames/Создание нового сегмента_Шаг 1_Формат_ Число.svg",
+    "aliases": [
+      "sl-segment",
+      "sl-n-segment-1"
+    ],
+    "sha256": "81cc98b72b5123a931852d218abc006e79370e590ccb1f87f57ef72402c60d71",
+    "width": 1280,
+    "height": 1116,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/sl-segment-number-800.webp",
+        "bytes": 29960
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/sl-segment-number-1600.webp",
+        "bytes": 57356
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/sl-segment-number-2400.webp",
+        "bytes": 103672
+      }
+    ]
+  },
+  {
+    "id": "ispace-gantt",
+    "source": "frames/Представление_ неделя_Гант.svg",
+    "aliases": [
+      "ispace-n-gantt"
+    ],
+    "sha256": "699108cbcdd6d7cad9d7ace1d4a1997b48766ad8101512cb5501cf776e4d51a2",
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/ispace-gantt-800.webp",
+        "bytes": 19118
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/ispace-gantt-1600.webp",
+        "bytes": 35428
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/ispace-gantt-2400.webp",
+        "bytes": 68874
+      }
+    ]
+  },
+  {
+    "id": "ispace-teams",
+    "source": "frames/Управления командами.svg",
+    "aliases": [
+      "ispace-n-teams",
+      "ispace-teams"
+    ],
+    "sha256": "2ae2a5c9d5388961a09fee0fe44da7d7b23f4de15c6e854b821cdc918647ac32",
+    "width": 1280,
+    "height": 929,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/ispace-teams-800.webp",
+        "bytes": 46348
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/ispace-teams-1600.webp",
+        "bytes": 109800
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/ispace-teams-2400.webp",
+        "bytes": 123436
+      }
+    ]
+  },
+  {
+    "id": "ispace-library",
+    "source": "frames/Редактор страницы_Редактирование библиотеки.svg",
+    "aliases": [
+      "ispace-n-library",
+      "ispace-editor"
+    ],
+    "sha256": "b984d6034cc1e4727c6b145193354d0820019132d3e5d6e72063e0c7e9bd4829",
+    "width": 1280,
+    "height": 986,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/ispace-library-800.webp",
+        "bytes": 32572
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/ispace-library-1600.webp",
+        "bytes": 64032
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/ispace-library-2400.webp",
+        "bytes": 99340
+      }
+    ]
+  },
+  {
+    "id": "ispace-kanban",
+    "source": "frames/Канбан доска_перетаскивание карточки.svg",
+    "aliases": [
+      "ispace-kanban-2"
+    ],
+    "sha256": "7b7b2ddcebc7a025d6f34b10cf705420917a69309cd7f11cb1c12829bf60204c",
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/ispace-kanban-800.webp",
+        "bytes": 32424
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/ispace-kanban-1600.webp",
+        "bytes": 71020
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/ispace-kanban-2400.webp",
+        "bytes": 121504
+      }
+    ]
+  },
+  {
+    "id": "ispace-form",
+    "source": "frames/Редактор_при первом открытии формы, с настройками по умолчанию.svg",
+    "aliases": [
+      "ispace-settings",
+      "ispace-n-form"
+    ],
+    "sha256": "dda63d53bfa4ab9800fc22019b268f94bec12e4050175cbba5dba69cb3c21c0e",
+    "width": 1280,
+    "height": 1104,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/ispace-form-800.webp",
+        "bytes": 26796
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/ispace-form-1600.webp",
+        "bytes": 54398
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/ispace-form-2400.webp",
+        "bytes": 86782
+      }
+    ]
+  },
+  {
+    "id": "risk-home",
+    "source": "frames/Главная RiskControl_ховер в области с перс. инфой.svg",
+    "aliases": [
+      "rc-n-home",
+      "rc-home"
+    ],
+    "sha256": "42618f7aaec3d610a3d933aa1dab94b2c400f64a45b616c27c47fd64f4275f54",
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/risk-home-800.webp",
+        "bytes": 53978
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/risk-home-1600.webp",
+        "bytes": 120660
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/risk-home-2400.webp",
+        "bytes": 198520
+      }
+    ]
+  },
+  {
+    "id": "risk-documents",
+    "source": "frames/Рабочая область_столбец Название в одну строчку.svg",
+    "aliases": [
+      "rc-n-docs"
+    ],
+    "sha256": "6ca02c05528a89dcd5ae86bf8a50d58d3e634bd05ada9e02267e46b9c65d7bdd",
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/risk-documents-800.webp",
+        "bytes": 21892
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/risk-documents-1600.webp",
+        "bytes": 48840
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/risk-documents-2400.webp",
+        "bytes": 78282
+      }
+    ]
+  },
+  {
+    "id": "olimp-collections",
+    "source": "frames/1 Подборки проектов.svg",
+    "aliases": [
+      "olimp-collections"
+    ],
+    "sha256": "cfc86063d3d332d86566944176e60b945ddb0a7b23eaef73075b0b46b47094b9",
+    "width": 1440,
+    "height": 1555,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/olimp-collections-800.webp",
+        "bytes": 368160
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/olimp-collections-1600.webp",
+        "bytes": 1098118
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/olimp-collections-2400.webp",
+        "bytes": 2061980
+      }
+    ]
+  },
+  {
+    "id": "olimp-skills",
+    "source": "frames/2 Полная подборка_На основе навыков.svg",
+    "aliases": [
+      "olimp-board"
+    ],
+    "sha256": "8c9bd98d9a2710936422d1b2c61c370a06bc963e76a2a7f60cb3eba404f23c86",
+    "width": 1440,
+    "height": 1028,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/olimp-skills-800.webp",
+        "bytes": 256130
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/olimp-skills-1600.webp",
+        "bytes": 780616
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/olimp-skills-2400.webp",
+        "bytes": 1488278
+      }
+    ]
+  },
+  {
+    "id": "olimp-project",
+    "source": "frames/4 Подробная карточка проекта.svg",
+    "aliases": [
+      "olimp-project"
+    ],
+    "sha256": "ad6387e79bf26dbe18efdf3a1f8a2dd25bfa818f5e6818b75e0ff329f1c4d5ff",
+    "width": 1440,
+    "height": 1731,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/olimp-project-800.webp",
+        "bytes": 233476
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/olimp-project-1600.webp",
+        "bytes": 642582
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/olimp-project-2400.webp",
+        "bytes": 1114190
+      }
+    ]
+  },
+  {
+    "id": "fes-home",
+    "source": "frames/Главная страница.svg",
+    "aliases": [
+      "fes-n-home",
+      "fes-home"
+    ],
+    "sha256": "4a997c5c4b0bbf41460682aadbebe36449b527f75b46ae9b238a628312ef284b",
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/fes-home-800.webp",
+        "bytes": 26556
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/fes-home-1600.webp",
+        "bytes": 51340
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/fes-home-2400.webp",
+        "bytes": 75318
+      }
+    ]
+  },
+  {
+    "id": "fes-pay",
+    "source": "frames/Оплаты и начисления.svg",
+    "aliases": [
+      "fes-n-pay"
+    ],
+    "sha256": "c0937f8e1e1f08176e74b09c305d458ab1770d147be23be53cd1c51a22004f86",
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/fes-pay-800.webp",
+        "bytes": 27786
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/fes-pay-1600.webp",
+        "bytes": 53764
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/fes-pay-2400.webp",
+        "bytes": 79648
+      }
+    ]
+  },
+  {
+    "id": "fes-requests",
+    "source": "frames/Заявки.svg",
+    "aliases": [
+      "fes-n-requests"
+    ],
+    "sha256": "080313e1d5382c1d985d796acd83417f979dad0592a66d7066a2bdec0456f470",
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/fes-requests-800.webp",
+        "bytes": 16940
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/fes-requests-1600.webp",
+        "bytes": 30300
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/fes-requests-2400.webp",
+        "bytes": 54478
+      }
+    ]
+  },
+  {
+    "id": "kt-portfolio",
+    "source": "frames/Портфель проектов.svg",
+    "aliases": [
+      "kt-n-portfolio",
+      "kt-portfolio"
+    ],
+    "sha256": "28119ab2b65952689e8f58c64152b4460173199c245120e72d372a44687665ff",
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "width": 800,
+        "path": "assets/frame-previews/kt-portfolio-800.webp",
+        "bytes": 46320
+      },
+      {
+        "width": 1600,
+        "path": "assets/frame-previews/kt-portfolio-1600.webp",
+        "bytes": 105394
+      },
+      {
+        "width": 2400,
+        "path": "assets/frame-previews/kt-portfolio-2400.webp",
+        "bytes": 182036
+      }
+    ]
+  }
+]
